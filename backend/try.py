@@ -11,8 +11,7 @@ def extract_text_from_pdf(file_obj):
         text += page.extract_text() or ""
     return text
 
-pdf = open('vce.pdf', 'rb')
+pdf = open('vce unit 1.pdf', 'rb')
 text = extract_text_from_pdf(pdf)
 print(text)
-
 

@@ -8,6 +8,8 @@ or from a predefined folder, generates embeddings with SBERT, and creates summar
   - All chunk summaries can be combined and re-summarised to form a comprehensive summary.
 This final summary is used by the quiz generation endpoint to produce a quiz.
 """
+
+
 import asyncio  
 import os
 import json
@@ -191,7 +193,6 @@ def find_best_matches(user_query, top_n=3):
         f"Refer to the following information:\n{ans}\n"
         "If the information is insufficient, answer generally. "
         "Keep your responses short and precise. "
-        "Answer as if you are a college faculty member named Sundar."
     )
 
 # -------------------------
